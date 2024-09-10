@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Booking</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="myjs.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://fonts.googleapis.com/css?family=Poppins"
+    />
+
+    <link rel="stylesheet" href="mycss.css" />
+  </head>
+  <style type="text/css">
+    label {
+      color: white;
+    }
+  </style>
+  <body>
+    <nav
+      class="navbar navbar-inverse"
+      style="border-radius: 0px !important; margin: 0; border: 0"
+    >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Eagle Airways</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="booking.html">Booking</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="background-wrapper"
+    >
+      <!--header-->
+
+      <div class="container-fluid">
+        <header>
+          <h2></h2>
+        </header>
+
+        <!--panel-->
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="panel-group">
+            <div class="panel panel-default panel-transparent">
+              <div class="panel-heading">
+                <legend style="text-align: center">
+                  Passengers Information
+                </legend>
+              </div>
+
+              <div class="panel-body">
+                <header>
+                  <h2>Adults Details:</h2>
+                  <hr />
+                </header>
+                <div class="input-group">
+                  <label for="class">Salutation</label>
+                  <select
+                    class="form-control trans-input-area"
+                    id="user-adult-salutation"
+                  >
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                    <option>Ms.</option>
+                  </select>
+                </div>
+                <form class="form-inline">
+                  <br />
+                  <div>
+                    <div class="input-group">
+                      <label>First name</label>
+                      <input
+                        id="user-adult-first-name"
+                        type="text"
+                        class="form-control trans-input-area"
+                        placeholder="First name"
+                        required
+                      />
+                    </div>
+                    <div class="input-group">
+                      <label>Last name</label>
+                      <input
+                        id="user-adult-last-name"
+                        type="text"
+                        class="form-control trans-input-area"
+                        placeholder="Last name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <br />
+                  <div>
+                    <div class="input-group">
+                      <label>Phone Country Code</label>
+                      <input
+                        id="user-adult-code"
+                        type="number"
+                        class="form-control trans-input-area"
+                        placeholder="+00"
+                        required
+                      />
+                    </div>
+                    <div class="input-group">
+                      <label>Number</label>
+                      <input
+                        id="user-adult-number"
+                        type="number"
+                        placeholder="123456789"
+                        class="form-control trans-input-area"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <br />
+                  <div>
+                    <div class="input-group">
+                      <label>Email</label>
+                      <input
+                        id="user-adult-email"
+                        type="email"
+                        placeholder="example@email.com"
+                        class="form-control trans-input-area"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <br />
+                  <br />
+                  <button id="booking2-button" type="submit" class="btn btn-primary trans-input-area" style="width: 30%">
+                    Continue
+                  </button>
+                  <br>
+                  <hr />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container-fluid">
+        <ul class="icons">
+          <li>
+            <a
+              href="mailto:eagleairlines@gmail.com"
+              class="fa fa-envelope"
+              style="color: grey"
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">&copy; Eagle Airways. All rights reserved.</div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>

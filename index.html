@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Eagle Airways</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="myjs.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins">
+		<link rel="stylesheet" href="mycss.css">
+	</head>	
+	
+	<body>
+		<nav  style="border-radius:0px !important; margin:0;border: 0">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>                       
+					</button>
+					<a class="navbar-brand" href="index.html">Eagle Airways</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li id="navbar-booking-button"><a href="booking.html">Booking</a></li>
+						<li id="navbar-itinerary-button"><a href="itinerary.html">Itinerary</a></li>
+						<li><a href="contactus.html">Contact Us</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a style="cursor: pointer;">
+								<span id="navbar-email-display"></span>
+							</a>
+						</li>
+					</ul>
+					<ul id="navbar-login-button" class="nav navbar-nav navbar-right">
+						<li><a href="#myModal" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					</ul>
+					<ul id="navbar-signup-button" class="nav navbar-nav navbar-right">
+						<li><a href="#myModalSignUp" data-toggle="modal" data-target="#myModalSignUp"><span class="glyphicon glyphicon-log-in"></span> Sign up</a></li>
+					</ul>
+					<ul id="navbar-logout-button" class="nav navbar-nav navbar-right">
+						<li><a style="cursor: pointer;">Logout</a></li>
+					</ul>
+				</div>	
+			</div>
+			</div>	
+		</nav>
+
+
+			<!--background slide image-->
+			<!-- style="background-image: url(images/airline/b.jpg); -->
+			<div class="background-wrapper" style="background-image: url(background-airline.jpg); height: 75vh;">
+				<div style="text-align: center; padding: 10rem; padding-top: 1rem; color:white">
+					<h1 style="font-size: 48px;">Welcome to Eagle Airways</h1>
+					<div id="alert-box"></div>
+				</div>
+			</div>
+
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="container-fluid">
+					<ul class="icons">
+						<li><a href="mailto:eagleairways@gmail.com" class="fa fa-envelope" style="color: grey"></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Eagle Airways. All rights reserved.
+				</div>
+			</footer>
+
+
+			  <!-- Login Modal -->
+			<div class="modal fade" id="myModal" role="dialog" style="padding: 10rem">
+			    <div class="modal-dialog">
+			    
+				      <!-- Modal content-->
+				    <div class="modal-content trans-input-area">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <h4 class="modal-title" style="text-align:center;">Log In</h4>
+				        </div>
+
+				        <div class="modal-body form-group trans-input-area">
+				        	<label><b>Email</b></label>
+				      		<input id="user-email-login" type="text" class="form-control" placeholder="example@email.com" name="uname" required>
+				      		<br>
+				      		<label><b>Password</b></label>
+				      		<input id="user-password-login" type="password" class="form-control" placeholder="Enter Password" name="psw" required>
+				        	<br>
+				      		<button id="login-btn" class="btn btn-block form-control" type="submit" data-dismiss="modal" style="color: white">
+								<a><b>Login</b></a>
+							</button>
+				        </div>
+
+				        <div class="modal-footer">
+				         	<button type="button" class="btn btn-block" data-dismiss="modal" style="background-color: grey;">
+								<b>Cancel</b>
+							</button>
+				        </div>
+				    </div>
+			      
+			    </div>
+			</div>
+
+			<!-- Sign up modal -->
+			<div class="modal fade" id="myModalSignUp" role="dialog" style="padding: 10rem">
+			    <div class="modal-dialog">
+			    
+				      <!-- Modal content-->
+				    <div class="modal-content trans-input-area">
+				        <div class="modal-header">
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				          <h4 class="modal-title" style="text-align:center;">Sign up</h4>
+				        </div>
+
+				        <form class="modal-body form-group trans-input-area adminForm">
+				        	<label><b>Email</b></label>
+				      		<input id="user-email-signup" type="text" class="form-control" placeholder="example@email.com" name="uname" required>
+				      		<br>
+				      		<label><b>Password</b></label>
+				      		<input id="user-password-signup" type="password" class="form-control" placeholder="Enter Password" name="psw" required>
+				        	<br>
+				      		<button id="signup-btn" class="btn btn-block form-control" type="submit" data-dismiss="modal" style="color: white">
+								<a><b>Sign up</b></a>
+							</button>
+						</form>
+
+				        <div class="modal-footer">
+				         	 <button type="button" class="btn btn-block" data-dismiss="modal" style="background-color: grey;"><b>Cancel</b></button>
+				        </div>
+				    </div>
+			      
+			    </div>
+			</div>
+
+
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+		<!-- <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script> -->
+		<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase.js"></script>
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			https://firebase.google.com/docs/web/setup#available-libraries -->
+
+		<!-- <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script> -->
+		<script src="myjs.js"></script>
+		<script src="auth.js"></script>
+	</body>
+</html>

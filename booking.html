@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Booking</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="myjs.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins">
+
+		<link rel="stylesheet" href="mycss.css">
+	</head>
+	<style type="text/css">
+		label {
+			color: white;
+		}
+	</style>
+
+	<script src="myjs.js"></script>
+	<body>
+				<nav class="navbar navbar-inverse" style="border-radius:0px !important; margin:0;border: 0">
+					<div class="container-fluid">
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>                       
+						  </button>
+						  <a class="navbar-brand" href="index.html">Eagle Airways</a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="booking.html">Booking</a></li>
+								<li><a href="contactus.html">Contact Us</a></li>
+							</ul>							
+						</div>	
+					</div>
+				</nav>
+				
+				
+
+				<div class="background-wrapper">
+				
+				<!--header-->
+
+				<div class="container-fluid">
+					<header>
+						<h2>Book Your Flight</h2>
+						<hr>
+					</header>
+
+
+					<!--panel-->
+					<div class="col-sm-8 col-sm-offset-2">
+						<div class="panel-group">
+						  	<div class="panel panel-default panel-transparent">
+						    	<div class="panel-heading">
+						    		<legend style="text-align: center;">Flight Information</legend>
+						    	</div>
+						    	<div class="panel-body">
+						    		<div class="input-group">
+										<label for="class">Class</label>
+										<select class="form-control trans-input-area" id="user-flight-info">
+											<option>Economy</option>
+											<option>Business</option>
+											<option>First</option>
+										</select>
+									</div>
+									<form class="form-inline">
+										<br>
+										<div>
+											<div class="input-group" style="width: 300px;">
+												<label for="from">From</label>
+												<select class="form-control trans-input-area" id="user-departure">
+													<option>Select departure</option>
+													<option>Mumbai, India (Chhatrapati Shivaji International Airport(BOM))</option>
+													<option>Delhi, India (Delhi Airport(DEL))</option>
+													<option>Bangkok, Thailand (Suvarnabhumi Airport (BKK))</option>
+													<option>Bangalore, India (Bengaluru International Airport (BLR))</option>
+													<option>Pune, India (Pune Airport (PNQ))</option>
+													<option>Hyderabad, India (Rajiv Gandhi International Airport (HYD))</option>
+													<option>Kolkata, India (Netaji Subhash Chandra Bose International Airport (CCU))</option>
+													<option>Chennai, India (Madras,Chennai International Airport (MAA))</option>
+													<option>Goa, India (Dabolim Goa International Airport (GOI))</option>
+													<option>Dubai, United Arab Emirates (Dubai International Airport (DXB))</option>
+													<option>Singapore, Singapore (Changi Airport (SIN))</option>
+													<option>Kathmandu, Nepal (Tribhuvan International Airport (KTM))</option>
+													<option>Sharjah, United Arab Emirates (Sharjah International Airport (SHJ))</option>
+													<option>New York, US (All Airports (NYC))</option>
+													<option>London, United Kingdom (All Airports (LON))</option>
+													<option>Hong Kong, Hong Kong (Hong Kong International Airport (HKG))</option>
+													<option>San Francisco, US (San Francisco International Airport (SFO))</option>
+													<option>London, United Kingdom (Heathrow Airport (LHR))</option>
+													<option>Paris, France (Charles de Gaulle Airport (CDG))</option>
+													<option>Abu Dhabi, United Arab Emirates (Abu Dhabi International Airport (AUH))</option>
+												</select>
+											</div>
+											<div class="input-group" style="width: 300px;">
+												<label for="to">To</label>
+												<select class="form-control trans-input-area" id="user-destination">
+													<option>Select destination</option>
+													<option>Mumbai, India (Chhatrapati Shivaji International Airport(BOM))</option>
+													<option>Delhi, India (Delhi Airport(DEL))</option>
+													<option>Bangkok, Thailand (Suvarnabhumi Airport (BKK))</option>
+													<option>Bangalore, India (Bengaluru International Airport (BLR))</option>
+													<option>Pune, India (Pune Airport (PNQ))</option>
+													<option>Hyderabad, India (Rajiv Gandhi International Airport (HYD))</option>
+													<option>Kolkata, India (Netaji Subhash Chandra Bose International Airport (CCU))</option>
+													<option>Chennai, India (Madras,Chennai International Airport (MAA))</option>
+													<option>Goa, India (Dabolim Goa International Airport (GOI))</option>
+													<option>Dubai, United Arab Emirates (Dubai International Airport (DXB))</option>
+													<option>Singapore, Singapore (Changi Airport (SIN))</option>
+													<option>Kathmandu, Nepal (Tribhuvan International Airport (KTM))</option>
+													<option>Sharjah, United Arab Emirates (Sharjah International Airport (SHJ))</option>
+													<option>New York, US (All Airports (NYC))</option>
+													<option>London, United Kingdom (All Airports (LON))</option>
+													<option>Hong Kong, Hong Kong (Hong Kong International Airport (HKG))</option>
+													<option>San Francisco, US (San Francisco International Airport (SFO))</option>
+													<option>London, United Kingdom (Heathrow Airport (LHR))</option>
+													<option>Paris, France (Charles de Gaulle Airport (CDG))</option>
+													<option>Abu Dhabi, United Arab Emirates (Abu Dhabi International Airport (AUH))</option>
+												</select>
+											</div>
+										</div>
+										<br>
+										<div>
+											<div class="input-group">
+												<label for="Departure">Departure Date</label>
+												<input id="user-departure-date" type="date" class="form-control trans-input-area" name="date1" min="2015-01-01" required>
+											</div>
+											<div class="input-group">
+												<label>Return Date</label>
+												<input id="user-return-date" type="date" class="form-control trans-input-area" name="date2" min="2015-01-01" id="Return" >
+											</div>
+										</div>
+										<br>
+										<div>
+											<div class="input-group">
+												<label for="Adults">Adults</label>
+												<input id="user-no-of-adults" type="number" class="form-control trans-input-area" id="Adults" value="1" name="" min="1" required>
+											</div>
+										</div>
+										<br>
+										<p id="user_display"></p>
+										<button id="booking1-button" type="submit" class="btn btn-primary trans-input-area" style="width: 30%">
+											Continue
+										</button>
+										<br>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="container-fluid">
+					<ul class="icons">
+						<li><a href="mailto:eagleairlines@gmail.com" class="fa fa-envelope" style="color: grey"></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Eagle Airways. All rights reserved.
+				</div>
+			</footer>
+
+			<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase.js"></script>
+			<script src="auth.js"></script>
+	</body>
+</html>

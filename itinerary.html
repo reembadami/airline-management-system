@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>itinerary</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="myjs.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://fonts.googleapis.com/css?family=Poppins"
+    />
+
+    <link rel="stylesheet" href="mycss.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-inverse"
+      style="border-radius: 0px !important; margin: 0; border: 0"
+    >
+      <div class="container-fluid">
+        <div href="index.html" style="text-align: center; color: white">
+          <h2>Eagle Airways</h2>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="background-wrapper"
+    >
+      <div class="container-fluid">
+        <header>
+          <h2>Flight Details</h2>
+          <hr />
+        </header>
+        <div class="col-sm-12 col-sm-offset-0">
+          <div class="panel-group">
+            <div class="panel panel-default panel-transparent">
+              <div class="panel-heading">
+                <legend style="text-align: center; color: black">
+                  Departure Information
+                </legend>
+              </div>
+
+              <div class="panel-body">
+                <table
+                  id="user-table-departure"
+                  class="table table-hover"
+                  style="color: black; font-size: 20px"
+                >
+                  <thead>
+                    <tr>
+                      <th>Passengers</th>
+                      <th>Info</th>
+                      <th>Flight#</th>
+                      <th>From</th>
+                      <th>To</th>
+                      <th>Departure Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <div class="col-sm-12 col-sm-offset-0">
+          <div class="panel-group">
+            <div class="panel panel-default panel-transparent">
+              <div class="panel-heading">
+                <legend style="text-align: center; color: black">
+                  Return Information
+                </legend>
+              </div>
+
+              <div class="panel-body">
+                <table
+                  class="table table-hover"
+                  style="color: black; font-size: 20px"
+                  id="user-table-return"
+                >
+                  <thead>
+                    <tr>
+                        <th>Passengers</th>
+                        <th>Info</th>
+                        <th>Flight#</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Return Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <dir class="col-sm-12 col-sm-offset-0">
+          <div
+            class="trans-input-area well"
+            style="width: 100%; padding: 1rem; text-align: center"
+          >
+            <h2>Total Cost: Rs. <span id="total-payment"></span></h2>
+          </div>
+        </dir>
+
+        <br />
+        <br />
+
+        <div class="col-sm-12 col-sm-offset-0">
+          <button
+            class="btn btn-primary btn-block trans-input-area"
+            href="payment.html"
+            type="submit"
+            style="height: 7rem; text-align: center"
+          >
+            <a href="payment.html" style="color: white"
+              ><h4>Proceed to Payment</h4></a
+            >
+          </button>
+        </div>
+        <br />
+        <br />
+      </div>
+
+      <br />
+      <br />
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container-fluid">
+        <ul class="icons">
+          <li>
+            <a
+              href="mailto:eagleairlines@gmail.com"
+              class="fa fa-envelope"
+              style="color: grey"
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">&copy; Eagle Airways. All rights reserved.</div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase.js"></script>
+    <script src="auth.js"></script>
+  </body>
+</html>
